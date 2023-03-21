@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCase">
         <methods>
+          <include name="Login_to_the_application_with_valid_credentials_sauce50"/>
           <include name="tearDown"/>
-          <include name="Login_to_the_application_with_valid_credentials"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- TestCase -->

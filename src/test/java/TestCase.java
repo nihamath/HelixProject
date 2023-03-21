@@ -20,13 +20,24 @@ public class TestCase {
     }
 
     @Test
-    public void Login_to_the_application_with_valid_credentials() throws InterruptedException {
+    public void Login_to_the_application_with_valid_credentials_sauce50() throws InterruptedException {
     	driver.get("https://www.saucedemo.com/");
        	driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
         Thread.sleep(10000);
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='title']")).getText(), "Productss");
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='title']")).getText(), "Products");
+        
+    }
+    
+    @Test
+    public void Login_to_the_application_with_invalid_credentials_sauce51() throws InterruptedException {
+    	driver.get("https://www.saucedemo.com/");
+       	driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+        driver.findElement(By.id("login-button")).click();
+        Thread.sleep(10000);
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='title']")).getText(), "Products");
         
     }
 

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SampleAutomationTest_Suite" class="navigator-link">
-              <span class="suite-name border-passed">SampleAutomationTest Suite</span>
+              <span class="suite-name border-failed">SampleAutomationTest Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SampleAutomationTest_Suite" class="hide-methods failed suite-SampleAutomationTest_Suite"> (hide)</a> <!-- hide-methods failed suite-SampleAutomationTest_Suite -->
+                      <a href="#" panel-name="suite-SampleAutomationTest_Suite" class="show-methods failed suite-SampleAutomationTest_Suite"> (show)</a> <!-- show-methods failed suite-SampleAutomationTest_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-SampleAutomationTest_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleAutomationTest_Suite" title="TestCase" class="method navigator-link" hash-for-method="Login_to_the_application_with_valid_credentials_sauce50">Login_to_the_application_with_valid_credentials_sauce50</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SampleAutomationTest_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,7 @@
                     <div class="method-list-content passed suite-SampleAutomationTest_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SampleAutomationTest_Suite" title="TestCase" class="method navigator-link" hash-for-method="Login_to_the_application_with_valid_credentials">Login_to_the_application_with_valid_credentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SampleAutomationTest_Suite" title="TestCase" class="method navigator-link" hash-for-method="Login_to_the_application_with_invalid_credentials_sauce51">Login_to_the_application_with_invalid_credentials_sauce51</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SampleAutomationTest_Suite -->
@@ -118,6 +132,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SampleAutomationTest_Suite" class="panel SampleAutomationTest_Suite">
+          <div class="suite-SampleAutomationTest_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_to_the_application_with_valid_credentials_sauce50">
+                  </a> <!-- Login_to_the_application_with_valid_credentials_sauce50 -->
+                  <span class="method-name">Login_to_the_application_with_valid_credentials_sauce50</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Productss] but found [Products]
+	at TestCase.Login_to_the_application_with_valid_credentials_sauce50(TestCase.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleAutomationTest_Suite-class-failed -->
           <div class="suite-SampleAutomationTest_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,9 +160,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login_to_the_application_with_valid_credentials">
-                  </a> <!-- Login_to_the_application_with_valid_credentials -->
-                  <span class="method-name">Login_to_the_application_with_valid_credentials</span>
+                  <a name="Login_to_the_application_with_invalid_credentials_sauce51">
+                  </a> <!-- Login_to_the_application_with_invalid_credentials_sauce51 -->
+                  <span class="method-name">Login_to_the_application_with_invalid_credentials_sauce51</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +219,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_to_the_application_with_valid_credentials')
+data.setCell(0, 1, 'Login_to_the_application_with_invalid_credentials_sauce51')
 data.setCell(0, 2, 'TestCase')
-data.setCell(0, 3, 11226);
+data.setCell(0, 3, 11469);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login_to_the_application_with_valid_credentials_sauce50')
+data.setCell(1, 2, 'TestCase')
+data.setCell(1, 3, 10448);
 window.suiteTableData['SampleAutomationTest_Suite']= { tableData: data, tableDiv: 'times-div-SampleAutomationTest_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-SampleAutomationTest_Suite">
               </div> <!-- times-div-SampleAutomationTest_Suite -->
             </div> <!-- times-div -->
@@ -226,12 +264,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Login_to_the_application_with_valid_credentials</span>
-                <span class="method-start">3584 ms</span>
+                <span class="method-name">Login_to_the_application_with_invalid_credentials_sauce51</span>
+                <span class="method-start">3708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_to_the_application_with_valid_credentials_sauce50</span>
+                <span class="method-start">15181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14815 ms</span>
+                <span class="method-start">25634 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

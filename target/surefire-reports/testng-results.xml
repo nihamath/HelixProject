@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-21T11:00:10 IST" name="SampleAutomationTest Suite" finished-at="2023-03-21T11:00:29 IST" duration-ms="19160">
+  <suite started-at="2023-03-21T13:34:36 IST" name="SampleAutomationTest Suite" finished-at="2023-03-21T13:35:02 IST" duration-ms="26170">
     <groups>
     </groups>
-    <test started-at="2023-03-21T11:00:10 IST" name="Login to the application with valid credentials sauce50" finished-at="2023-03-21T11:00:29 IST" duration-ms="19160">
+    <test started-at="2023-03-21T13:34:36 IST" name="Login to the application with valid credentials sauce50" finished-at="2023-03-21T13:35:02 IST" duration-ms="26170">
       <class name="TestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase@3d680b5a]" started-at="2023-03-21T11:00:10 IST" name="setUp" finished-at="2023-03-21T11:00:15 IST" duration-ms="5308" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase@16a0ee18]" started-at="2023-03-21T13:34:36 IST" name="setUp" finished-at="2023-03-21T13:34:39 IST" duration-ms="3358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login_to_the_application_with_valid_credentials()[pri:0, instance:TestCase@3d680b5a]" started-at="2023-03-21T11:00:15 IST" name="Login_to_the_application_with_valid_credentials" finished-at="2023-03-21T11:00:27 IST" duration-ms="12073" status="FAIL">
+        <test-method signature="Login_to_the_application_with_invalid_credentials_sauce51()[pri:0, instance:TestCase@16a0ee18]" started-at="2023-03-21T13:34:39 IST" name="Login_to_the_application_with_invalid_credentials_sauce51" finished-at="2023-03-21T13:34:50 IST" duration-ms="11467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_to_the_application_with_invalid_credentials_sauce51 -->
+        <test-method signature="Login_to_the_application_with_valid_credentials_sauce50()[pri:0, instance:TestCase@16a0ee18]" started-at="2023-03-21T13:34:50 IST" name="Login_to_the_application_with_valid_credentials_sauce50" finished-at="2023-03-21T13:35:01 IST" duration-ms="10479" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Productss] but found [Products]]]>
@@ -24,11 +28,11 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at TestCase.Login_to_the_application_with_valid_credentials(TestCase.java:29)
+at TestCase.Login_to_the_application_with_valid_credentials_sauce50(TestCase.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -62,8 +66,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_to_the_application_with_valid_credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase@3d680b5a]" started-at="2023-03-21T11:00:27 IST" name="tearDown" finished-at="2023-03-21T11:00:29 IST" duration-ms="1702" status="PASS">
+        </test-method> <!-- Login_to_the_application_with_valid_credentials_sauce50 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase@16a0ee18]" started-at="2023-03-21T13:35:01 IST" name="tearDown" finished-at="2023-03-21T13:35:02 IST" duration-ms="816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
