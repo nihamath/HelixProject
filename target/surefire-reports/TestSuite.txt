@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.729 s <<< FAILURE! - in TestSuite
+Login_to_the_application_with_valid_credentials(TestCase)  Time elapsed: 12.097 s  <<< FAILURE!
+java.lang.AssertionError: expected [Productss] but found [Products]
+	at TestCase.Login_to_the_application_with_valid_credentials(TestCase.java:29)
+
