@@ -37,7 +37,7 @@ public class TestCase {
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
         Thread.sleep(10000);
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='title']")).getText(), "Productss");
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='title']")).getText(), "Products");
         
     }
 
