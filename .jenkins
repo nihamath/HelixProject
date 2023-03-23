@@ -24,7 +24,7 @@ post{
    always {
  
       
-     Helix ALM Test Results Reporting: [
+     halm_report: [
                   halm_report automationSuite: 'Helix Automation Demo suite', 
                   automationSuiteID: 5, 
                   halmConnectionID: '915bc48c-f8a2-491c-b471-2b25cf4781c1', 
