@@ -22,7 +22,7 @@ echo 'release project'
 }
 post{
    always {
-      script {
+ 
       
       publishXML target: [
                   halm_report automationSuite: 'Helix Automation Demo suite', 
@@ -34,7 +34,7 @@ post{
                   ]
              }           
             
-        }
+        
   }  
 
 
