@@ -26,9 +26,9 @@ post{
       
      halm_report: [
                   halmConnectionID: '915bc48c-f8a2-491c-b471-2b25cf4781c1',
-                  halm_report automationSuite: 'Helix Automation Demo suite', 
-                  automationSuiteID: 5, 
                   projectID: '{a062321e-26cb-4e60-b955-5409606b35c2}', 
+                  automationSuite: 'Helix Automation Demo suite', 
+                  automationSuiteID: 5, 
                   testFileFormat: '0', 
                   testFilePattern: 'target\\surefire-reports\\junitreports\\TEST-TestCase.xml'
                   ]
