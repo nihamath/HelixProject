@@ -2,6 +2,12 @@ pipeline{
 
 agent any
 
+ parameters {
+      
+        string(name: 'automationSuite', defaultValue: 'Helix Automation Demo suite', description: 'Automation suite name')
+        
+    }
+
 stages{
 stage ('build'){
 steps{
@@ -20,7 +26,7 @@ post{
    always {
  
       
-     halm_report automationSuite: 'Helix Automation Demo suite', 
+     halm_report automationSuite: ${params.automationSuite}, 
      automationSuiteID: 5, 
      halmConnectionID: '915bc48c-f8a2-491c-b471-2b25cf4781c1', 
      projectID: '{a062321e-26cb-4e60-b955-5409606b35c2}', 
