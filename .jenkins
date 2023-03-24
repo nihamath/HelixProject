@@ -4,7 +4,8 @@ agent any
 
  parameters {
       
-        string(name: 'automationSuite', defaultValue: 'Helix Automation Demo suite', description: 'Automation suite name')
+      choice(name: 'automationSuite', choices:['Helix Automation Demo suite'], description: 'Automation suite name')
+     
         
     }
 
